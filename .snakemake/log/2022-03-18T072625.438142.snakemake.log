@@ -1,0 +1,2 @@
+SyntaxError in line 9 of /Users/dwietsma/Documents/sustainability-data/data-projects/container-test/Snakefile:
+Unexpected keyword scripts in rule definition (Snakefile, line 9)

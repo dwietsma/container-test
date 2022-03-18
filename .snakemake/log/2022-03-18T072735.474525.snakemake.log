@@ -1,0 +1,28 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	make_output_01
+	1	target
+	2
+
+[Fri Mar 18 07:27:35 2022]
+rule make_output_01:
+    output: proc/output.csv
+    jobid: 1
+
+[Fri Mar 18 07:27:35 2022]
+Error in rule make_output_01:
+    jobid: 1
+    output: proc/output.csv
+
+RuleException:
+WorkflowError in line 10 of /Users/dwietsma/Documents/sustainability-data/data-projects/container-test/Snakefile:
+URLError: <urlopen error [Errno 2] No such file or directory: '/Users/dwietsma/Documents/sustainability-data/data-projects/container-test/scripts/make-output-01.R'>
+  File "/Users/dwietsma/Documents/sustainability-data/data-projects/container-test/Snakefile", line 10, in __rule_make_output_01
+  File "/Users/dwietsma/opt/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /Users/dwietsma/Documents/sustainability-data/data-projects/container-test/.snakemake/log/2022-03-18T072735.474525.snakemake.log
