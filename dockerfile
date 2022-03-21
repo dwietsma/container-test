@@ -1,3 +1,4 @@
+
 # Base image https://hub.docker.com/u/rocker/
 FROM rocker/tidyverse:3.6.1
 
@@ -13,10 +14,8 @@ COPY ./config/install-r-packages-with-renv.R /tmp/install-r-packages-with-renv.R
 ## install required R libraries
 RUN Rscript /tmp/install-r-packages-with-renv.R
 
-
-
 # create an R user
-ENV USER tidyverse
+ENV USER dwietsma
 
 ## Copy your working files over
 ## The $USER defaults to `rstudio` but you can change this at runtime
