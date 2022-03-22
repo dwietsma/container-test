@@ -1,4 +1,6 @@
 
+container: "docker://dwietsma/container-test:second-tag"
+
 rule target:
     input:
         "proc/output.csv"

@@ -1,9 +1,6 @@
 
 # Base image https://hub.docker.com/u/rocker/
-FROM rocker/tidyverse:3.6.1
-
-# pull snakelike image
-#bdocker pull snakemake/snakemake:5.8.2
+FROM rocker/tidyverse:3.6.2
 
 # install required computer libraries
 # RUN apt-get update && apt-get install -y \

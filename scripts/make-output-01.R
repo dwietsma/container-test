@@ -16,9 +16,9 @@ df %>%
 
 # write output file to test R package versions ----------------------------
 
-session_info <- sessionInfo()
+session_info <- capture.output(sessionInfo())
 
-session_info %>% 
+session_info %>%
 writeLines(snakemake@output[["session_info"]])
 
 # test 

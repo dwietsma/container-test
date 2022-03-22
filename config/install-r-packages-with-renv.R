@@ -5,7 +5,7 @@ library(devtools)
 
 # install specific version of renv
 devtools::install_version("renv",
-                          version = "0.12.3",
+                          version = "0.15.4",
                           repos = "https://cran.rstudio.com/")
 
 # call renv constent to give permission
