@@ -6,16 +6,17 @@ FROM rocker/tidyverse:3.6.2
 # RUN apt-get update && apt-get install -y \
 #    libxyz \
 
-## Copy install-r-packages-with-renv.R to container directory /tmp
-COPY ./config/install-r-packages-with-renv.R /tmp/install-r-packages-with-renv.R
-## install required R libraries
-RUN Rscript /tmp/install-r-packages-with-renv.R
+# Define working directory
+WORKDIR /container-test
 
-# create an R user
-ENV USER dwietsma
+# Copy files to container
+COPY renv.lock renv.lock
+COPY raw raw
+COPY proc proc
+COPY scripts scripts
 
-## Copy your working files over
-## The $USER defaults to `rstudio` but you can change this at runtime
-COPY ./raw /home/$USER/raw
-COPY ./proc /home/$USER/proc
-COPY ./scripts /home/$USER/scripts
+# Install and restore R packages with RENV
+ENV RENV_VERSION 0.15.4
+RUN R -e "install.packages('remotes', repos = c(CRAN = 'https://cloud.r-project.org'))"
+RUN R -e "remotes::install_github('rstudio/renv@${RENV_VERSION}')"
+RUN R -e "renv::restore()"

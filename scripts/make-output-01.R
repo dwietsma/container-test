@@ -3,7 +3,6 @@ library(tidyverse)
 library(janitor)
 library(devtools)
 
-
 # -------------------------------------------------------------------------
 
 df <- tibble("A" = 1:3,
@@ -11,7 +10,8 @@ df <- tibble("A" = 1:3,
   clean_names()
 
 df %>% 
-  write_csv(snakemake@output[["output_file"]])
+  write_csv("proc/output.csv")
+  # write_csv(snakemake@output[["output_file"]])
 
 
 # write output file to test R package versions ----------------------------
@@ -19,6 +19,6 @@ df %>%
 session_info <- capture.output(sessionInfo())
 
 session_info %>%
-writeLines(snakemake@output[["session_info"]])
+  writeLines("proc/session_info.txt")
+# writeLines(snakemake@output[["session_info"]])
 
-# test 
