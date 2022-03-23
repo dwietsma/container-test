@@ -65,8 +65,6 @@ cd'ed to the project's root folder
 singularity shell container-test.simg
 ```
 
-
-
 ## R
 
 ## To run project
