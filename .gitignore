@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Rprofile
+.Ruserdata
+.DS_Store
+config/docker-password.txt
+.snakemake
+.bash_history
