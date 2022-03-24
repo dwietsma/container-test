@@ -7,3 +7,4 @@
 config/docker-password.txt
 .snakemake
 .bash_history
+container-test.simg
