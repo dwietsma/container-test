@@ -23,6 +23,6 @@ run_time <- paste("Script run at:", Sys.time())
 output_text <- c(run_time, session_info)
 
 output_text %>%
-  writeLines("proc/session_info.txt")
+  writeLines("proc/session-info.txt")
 # writeLines(snakemake@output[["session_info"]])
 
