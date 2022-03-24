@@ -1,34 +1,27 @@
+Script run at: 2022-03-24 10:06:06
 R version 3.6.1 (2019-07-05)
 Platform: x86_64-apple-darwin15.6.0 (64-bit)
 Running under: macOS  10.16
 
 Matrix products: default
-BLAS:   /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRblas.0.dylib
 LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
 
 locale:
 [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 
 attached base packages:
-[1] stats     graphics  grDevices utils     datasets  methods   base     
+[1] stats     graphics  grDevices datasets  utils     methods   base     
 
 other attached packages:
- [1] devtools_2.2.1  usethis_1.5.1   janitor_1.2.0   forcats_0.4.0  
- [5] stringr_1.4.0   dplyr_1.0.8     purrr_0.3.4     readr_1.3.1    
- [9] tidyr_1.2.0     tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.2.1
+[1] forcats_0.4.0   stringr_1.4.0   dplyr_1.0.8     purrr_0.3.4     readr_1.3.1    
+[6] tidyr_1.2.0     tibble_3.1.6    ggplot2_3.3.5   tidyverse_1.2.1
 
 loaded via a namespace (and not attached):
- [1] tidyselect_1.1.1  remotes_2.1.0     haven_2.1.1       snakecase_0.11.0 
- [5] testthat_2.2.1    colorspace_1.4-1  vctrs_0.3.8       generics_0.1.2   
- [9] utf8_1.1.4        rlang_1.0.1       pkgbuild_1.0.5    pillar_1.7.0     
-[13] glue_1.6.1        withr_2.1.2       DBI_1.1.0         sessioninfo_1.1.1
-[17] modelr_0.1.5      readxl_1.3.1      lifecycle_1.0.1   munsell_0.5.0    
-[21] gtable_0.3.0      cellranger_1.1.0  rvest_0.3.4       memoise_1.1.0    
-[25] callr_3.3.1       ps_1.3.0          fansi_0.4.0       broom_0.7.12     
-[29] Rcpp_1.0.7        scales_1.0.0      backports_1.1.4   desc_1.2.0       
-[33] pkgload_1.0.2     jsonlite_1.6      fs_1.3.1          hms_0.5.1        
-[37] digest_0.6.20     stringi_1.4.3     processx_3.4.1    rprojroot_1.3-2  
-[41] grid_3.6.1        cli_3.1.1         tools_3.6.1       magrittr_1.5     
-[45] crayon_1.3.4      pkgconfig_2.0.2   ellipsis_0.3.2    xml2_1.2.2       
-[49] prettyunits_1.0.2 lubridate_1.7.4   assertthat_0.2.1  httr_1.4.1       
-[53] rstudioapi_0.13   R6_2.4.0          compiler_3.6.1   
+ [1] Rcpp_1.0.7       cellranger_1.1.0 pillar_1.7.0     compiler_3.6.1   tools_3.6.1     
+ [6] jsonlite_1.6     lubridate_1.7.4  lifecycle_1.0.1  gtable_0.3.0     pkgconfig_2.0.2 
+[11] rlang_1.0.1      DBI_1.1.0        cli_3.1.1        rstudioapi_0.13  haven_2.1.1     
+[16] withr_2.5.0      xml2_1.2.2       httr_1.4.2       generics_0.1.2   vctrs_0.3.8     
+[21] hms_0.5.1        grid_3.6.1       tidyselect_1.1.1 glue_1.6.1       R6_2.4.0        
+[26] fansi_0.4.0      readxl_1.3.1     modelr_0.1.5     magrittr_1.5     backports_1.1.4 
+[31] scales_1.0.0     ellipsis_0.3.2   rvest_0.3.4      colorspace_1.4-1 renv_0.12.3     
+[36] utf8_1.1.4       stringi_1.4.3    munsell_0.5.0    broom_0.7.12     crayon_1.3.4    

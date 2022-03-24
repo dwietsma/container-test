@@ -18,7 +18,11 @@ df %>%
 
 session_info <- capture.output(sessionInfo())
 
-session_info %>%
+run_time <- paste("Script run at:", Sys.time())
+
+output_text <- c(run_time, session_info)
+
+output_text %>%
   writeLines("proc/session_info.txt")
 # writeLines(snakemake@output[["session_info"]])
 
