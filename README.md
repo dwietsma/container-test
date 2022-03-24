@@ -1,32 +1,29 @@
 # R Reproducible Workflow Example
 Example of a reproducible workflow using R, RStudio Projects, renv, docker, and snakemake
 
-## To build the Docker image from the dockerfile
+## Build the Docker image from the dockerfile
 
 cd to container-test folder
+
+You've created a dockerfile and now want to build the image, run this line below
 
 ```
 sudo docker build --rm --force-rm --tag dwietsma/container-test:third-tag .
 ```
 
 To run and shell into the Docker container
-
-```
-docker run --interactive --entrypoint /bin/bash dwietsma/container-test:third-tag
-```
-
 Optional, just if you want to look around
 
 ```
 docker run --interactive --rm --entrypoint /bin/bash dwietsma/container-test:third-tag
 ```
-## To push to docker hub
+## Push to Dockerhub
 
-create 'dwietsma/container-test' repo on dockerhub 
+Via the Dockerhub website, create a 'dwietsma/container-test' repo
 
 Log into Dockerhub via the command line
 ```
-cat ./config/docker-password.txt | docker login --username dwietsma --password-stdin
+cat ./config/docker-password.txt | docker login --username xyz --password-stdin
 ```
 * note that ./config/docker-password.txt is not tracked in git, create if needed
 
